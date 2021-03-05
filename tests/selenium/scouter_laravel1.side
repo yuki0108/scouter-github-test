@@ -1,0 +1,57 @@
+{
+  "id": "7bc336b4-bf88-4d43-870b-d27c9e4f55fe",
+  "version": "2.0",
+  "name": "scouter_laravel",
+  "url": "http://localhost/home",
+  "tests": [{
+    "id": "8d8651ce-2b8e-4d80-80e6-be0466a82570",
+    "name": "Untitled",
+    "commands": [{
+      "id": "1fad6c2c-7789-4b34-a560-46fcb85e0b8d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "171def03-616c-4a99-8c3c-9261e3ec3b53",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "856x1031",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f75ec20a-c2d8-40f9-b0cd-5fd26cfaabad",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'Hello World!!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d68b7d45-da98-48f4-83e0-a40c95b60b55",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'Hello World!!')]", "xpath:innerText"]
+      ],
+      "value": "Hello World!!"
+    }]
+  }],
+  "suites": [{
+    "id": "9aeff88d-772d-42c5-9a92-c3cfc316b622",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8d8651ce-2b8e-4d80-80e6-be0466a82570"]
+  }],
+  "urls": ["http://localhost/home"],
+  "plugins": []
+}
